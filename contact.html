@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+                background-color: aqua;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 100vh;
+                padding: 0 50px;
+            }
+
+            .container {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .Contact {
+                width: 40%;
+                font-size: larger;
+                text-align: left;
+                line-height: 1.8;
+            }
+
+            .Contact p {
+                font-size: 24px; 
+            }
+
+            .form-container {
+                width: 50%; 
+                text-align: left;
+                font-size: larger;
+            }
+
+            h1 {
+                font-size: 36px;
+                color: white;
+            }
+
+            input[type=text], input[type=email], textarea {
+                width: 70%;
+                padding: 12px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            input[type=submit] {
+                width: 40%;
+                background-color: gray;
+                color: white;
+                padding: 14px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: larger;
+            }
+
+            input[type=submit]:hover {
+                background-color: darkgray;
+            }
+
+            label {
+                font-size: larger;
+            }
+            
+            .navbar {
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                display: flex;
+                gap: 15px; 
+            }
+
+            .navbar a {
+                text-decoration: none;
+                color: black;
+                font-size: 1.2rem;
+                padding: 5px;
+            }
+
+            .navbar a:hover {
+                color: darkgray;
+            }
+
+            /* LinkedIn icon styling */
+            .linkedin-icon {
+                color: black;
+                font-size: 1.5rem;
+                margin-left: 5px;
+                transition: color 0.3s ease;
+            }
+
+            .linkedin-icon:hover {
+                color: #0077B5; /* LinkedIn blue color */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="Contact">
+                <h1>CONTACT US</h1>
+                <p>Phone No: <strong>+91 8341652991</strong></p>
+                <p>Email: <strong>kmanasa335@gmail.com</strong></p>
+                <p>Address: <strong>Viswanagar, Nandyal</strong></p>
+            </div>
+
+            
+            <div class="form-container">
+                <form action="submit_form.php">
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="First Name" required><br><br>
+
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="Last Name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                    <input type="submit" value="HIRE ME">
+                </form>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <a href="contact.html">Contact</a>
+            <a href="Education.html">Education</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Certificates.html">Certificates</a>
+            <a href="https://www.linkedin.com/in/your-linkedin-profile">
+                <i class="fab fa-linkedin linkedin-icon"></i>
+            </a>
+        </div>
+    </body>
+</html>
+
